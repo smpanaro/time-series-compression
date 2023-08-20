@@ -18,7 +18,7 @@ Compression Ratio: 6.92
 ```
 
 ### running
-1. You may will need both xz and brotli installed to build the binary.
+1. You will need both xz and brotli installed to build the binary.
     1. `brew install xz brotli`.
     1. If your homebrew prefix is not `/opt/homebrew`, update the #cgo directive in `compressor.go` with whatever it is.
     1. Alternatively, comment out the xz and brotli code in `compressor.go`
