@@ -35,7 +35,6 @@ struct CompressionChartView: View {
             Chart {
                 chartContents(includeNameAnnotations: false)
             }
-//            chartForegroundStyleScale(range: [.red, .blue, .orange])
             .chartForegroundStyleScale(
                 includeStacked ? Series.colors : Series.withoutStackedColors
             )
@@ -58,16 +57,9 @@ struct CompressionChartView: View {
             .chartXScale(domain: 0...32)
             .chartYScale(domain: -0.1...0.6) // Don't center this, so the labels have room.
             .chartYAxis(Visibility.hidden)
-            //        .chartYAxis {
-            //            AxisMarks(preset: .automatic, values: [-0.1, 0, 0.1, 0.2, 0.3]) {
-            //                AxisTick()
-            //                AxisGridLine()
-            //            }
-            //        }
             .chartXAxis {
                 AxisMarks(preset: .automatic) { v in
                     AxisTick()
-                    //                AxisGridLine()
                     AxisValueLabel {
                         if let ts = v.as(Double.self) {
                             Text(ts, format: .number) + Text(v.index != 0 ? "MB" : "")
@@ -93,10 +85,6 @@ struct CompressionChartView: View {
                         let chartHeight = minY * 0.65
 
                         Group {
-                            // Chart placeholder
-                            //                        Rectangle()
-                            //                            .fill(.orange)
-                            //                            .border(.blue, width: 2)
                             Chart {
                                 chartContents(includeUncompressed: false)
                             }
@@ -141,14 +129,6 @@ struct CompressionChartView: View {
                                 .border(insetBorderColor, width: 2)
                                 .position(x: midX, y: centerY)
                                 .frame(width: maxX-minX, height: height)
-                            //                        Path { path in
-                            //                            path.move(to: .init(x: minX+2, y: maxY))
-                            //                            path.addLine(to: .init(x: minX+2, y: geo.size.height))
-                            //
-                            //                            path.move(to: .init(x: maxX-2, y: maxY-2))
-                            //                            path.addLine(to: .init(x: geo.size.width, y: geo.size.height))
-                            //                        }
-                            //                        .stroke(.red, lineWidth: 4)
                         }
                         .coordinateSpace(name: "fullChart")
 
@@ -165,36 +145,9 @@ struct CompressionChartView: View {
         includeUncompressed: Bool = true,
         includeNameAnnotations: Bool = true
     ) -> some ChartContent {
-            //                PointMark(x: .value("group", "baseline"),
-            //                          y: .value("size", 26))
-
-            //            ForEach(PointGroup.specialist.points) { pt in
-            //                RuleMark(y: .value("size", pt.yearlyStorage.value))
-            //            }
-            //            .foregroundStyle(by: .value("group", "specialist"))
-            //
-            //            ForEach(PointGroup.generalist.points) { pt in
-            //                RuleMark(y: .value("size", pt.yearlyStorage.value))
-            //            }
-            //            .foregroundStyle(by: .value("group", "generalist"))
-            //
-            //            ForEach(PointGroup.stackedGeneralist.points) { pt in
-            //                RuleMark(y: .value("size", pt.yearlyStorage.value))
-            //            }
-            //            .foregroundStyle(by: .value("group", "stacked generalist"))
-
             RuleMark(y: .value("rule", 0))
                 .lineStyle(.init(lineWidth: 1))
                 .foregroundStyle(Color.secondary.opacity(0.6))
-            //                .annotation(position: .overlay, alignment: .bottom) {
-            //                    HStack {
-            //                        Text(Image(systemName: "arrow.left")) + Text(" Better")
-            //                        Spacer()
-            //                        Text("Worse ") + Text(Image(systemName: "arrow.right"))
-            //                    }
-            //                    .foregroundStyle(.tertiary)
-            //                    .padding(.horizontal, 4)
-            //                }
 
             if includeUncompressed {
                 PointMark(x: .value("size", 26),
@@ -226,15 +179,8 @@ struct CompressionChartView: View {
                         .offset(x: 8)
                     }
                 }
-                //                BarMark(x: .value("group", "specialist"),
-                //                          y: .value("size", pt.yearlyStorage.value))
-                //                .position(by: .value("name", pt.name))
             }
             .foregroundStyle(by: .value("group", Series.specialist.rawValue))
-            //            BarMark(x: .value("group", "specialist"),
-            //                    yStart: .value("min size", PointGroup.specialist.min.yearlyStorage.value),
-            //                    yEnd: .value("max size", PointGroup.specialist.max.yearlyStorage.value))
-            //            .foregroundStyle(.opacity(0.3))
 
             ForEach(PointGroup.generalist.points) { pt in
                 PointMark(x: .value("size", pt.yearlyStorage.value),
@@ -252,9 +198,6 @@ struct CompressionChartView: View {
                         .offset(x: pt.name == "zlib" ? 10 : 8)
                     }
                 }
-                //                BarMark(x: .value("group", "generalist"),
-                //                          y: .value("size", pt.yearlyStorage.value))
-                //                .position(by: .value("name", pt.name))
             }
             .foregroundStyle(by: .value("group", Series.generalist.rawValue))
 
@@ -276,15 +219,9 @@ struct CompressionChartView: View {
                             .offset(x: pt.name == "lzfse" ? 2 : 8)
                         }
                     }
-                    //                BarMark(x: .value("group", "generalist"),
-                    //                          y: .value("size", pt.yearlyStorage.value))
-                    //                .position(by: .value("name", pt.name))
                 }
                 .foregroundStyle(by: .value("group", Series.stackedGeneralist.rawValue))
             }
-
-            //            PointMark(x: .value("size", 0), y: .value("dummy", 0.1))
-            //                .opacity(0)
         }
 }
 

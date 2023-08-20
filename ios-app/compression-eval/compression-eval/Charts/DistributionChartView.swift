@@ -94,7 +94,6 @@ struct DistributionChartView: View {
                     }
                     .foregroundStyle(.orange.opacity(0.9))
                     .lineStyle(.init(lineWidth: 1))
-//                    .foregroundStyle(by: .value("method", method.rawValue))
             }
 
             ForEach(sortedRuns.filter { !$0.method.isApple }) { run in
@@ -129,13 +128,6 @@ struct DistributionChartView: View {
             }
 
         }
-//        .chartYAxis {
-//            AxisMarks(preset: .automatic) { v in
-//                AxisTick()
-//                AxisGridLine()
-//                AxisValueLabel(orientation: .horizontal)
-//            }
-//        }
         .chartXScale(type: .log)
         .padding()
     }
