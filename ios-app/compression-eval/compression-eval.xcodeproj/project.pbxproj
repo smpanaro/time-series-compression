@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC5146372A89C00F00C3C120 /* ExportableChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5146362A89C00F00C3C120 /* ExportableChartView.swift */; };
+		DC5146392A8F1FF800C3C120 /* CompressionChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5146382A8F1FF800C3C120 /* CompressionChartView.swift */; };
+		DC51463B2A90700800C3C120 /* TruncationChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51463A2A90700800C3C120 /* TruncationChartView.swift */; };
+		DC51463D2A92ACDD00C3C120 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51463C2A92ACDD00C3C120 /* Color.swift */; };
+		DCEEABB62A87DABD001DAC16 /* CompressionEvalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEEABB52A87DABD001DAC16 /* CompressionEvalApp.swift */; };
+		DCEEABB82A87DABD001DAC16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEEABB72A87DABD001DAC16 /* ContentView.swift */; };
+		DCEEABBA2A87DABE001DAC16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCEEABB92A87DABE001DAC16 /* Assets.xcassets */; };
+		DCEEABBE2A87DABE001DAC16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCEEABBD2A87DABE001DAC16 /* Preview Assets.xcassets */; };
+		DCEEABC52A87DB90001DAC16 /* BenchmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEEABC42A87DB90001DAC16 /* BenchmarkView.swift */; };
+		DCEEABC72A8832E2001DAC16 /* Runner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEEABC62A8832E2001DAC16 /* Runner.swift */; };
+		DCEEABCA2A883FF9001DAC16 /* Brotli in Frameworks */ = {isa = PBXBuildFile; productRef = DCEEABC92A883FF9001DAC16 /* Brotli */; };
+		DCEEABCC2A883FF9001DAC16 /* LZ4 in Frameworks */ = {isa = PBXBuildFile; productRef = DCEEABCB2A883FF9001DAC16 /* LZ4 */; };
+		DCEEABCE2A883FF9001DAC16 /* ZSTD in Frameworks */ = {isa = PBXBuildFile; productRef = DCEEABCD2A883FF9001DAC16 /* ZSTD */; };
+		DCEEABD02A8952F5001DAC16 /* ProcessInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEEABCF2A8952F5001DAC16 /* ProcessInfoProvider.swift */; };
+		DCEEABD32A8962FD001DAC16 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEEABD22A8962FD001DAC16 /* Run.swift */; };
+		DCEEABD62A8966EA001DAC16 /* DistributionChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEEABD52A8966EA001DAC16 /* DistributionChartView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC5146362A89C00F00C3C120 /* ExportableChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportableChartView.swift; sourceTree = "<group>"; };
+		DC5146382A8F1FF800C3C120 /* CompressionChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressionChartView.swift; sourceTree = "<group>"; };
+		DC51463A2A90700800C3C120 /* TruncationChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruncationChartView.swift; sourceTree = "<group>"; };
+		DC51463C2A92ACDD00C3C120 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		DCEEABB22A87DABD001DAC16 /* compression-eval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "compression-eval.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCEEABB52A87DABD001DAC16 /* CompressionEvalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressionEvalApp.swift; sourceTree = "<group>"; };
+		DCEEABB72A87DABD001DAC16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DCEEABB92A87DABE001DAC16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCEEABBB2A87DABE001DAC16 /* compression_eval.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = compression_eval.entitlements; sourceTree = "<group>"; };
+		DCEEABBD2A87DABE001DAC16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCEEABC42A87DB90001DAC16 /* BenchmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkView.swift; sourceTree = "<group>"; };
+		DCEEABC62A8832E2001DAC16 /* Runner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runner.swift; sourceTree = "<group>"; };
+		DCEEABCF2A8952F5001DAC16 /* ProcessInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfoProvider.swift; sourceTree = "<group>"; };
+		DCEEABD22A8962FD001DAC16 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
+		DCEEABD52A8966EA001DAC16 /* DistributionChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributionChartView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCEEABAF2A87DABD001DAC16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEEABCA2A883FF9001DAC16 /* Brotli in Frameworks */,
+				DCEEABCC2A883FF9001DAC16 /* LZ4 in Frameworks */,
+				DCEEABCE2A883FF9001DAC16 /* ZSTD in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCEEABA92A87DABD001DAC16 = {
+			isa = PBXGroup;
+			children = (
+				DCEEABB42A87DABD001DAC16 /* compression-eval */,
+				DCEEABB32A87DABD001DAC16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCEEABB32A87DABD001DAC16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCEEABB22A87DABD001DAC16 /* compression-eval.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCEEABB42A87DABD001DAC16 /* compression-eval */ = {
+			isa = PBXGroup;
+			children = (
+				DCEEABB52A87DABD001DAC16 /* CompressionEvalApp.swift */,
+				DCEEABB72A87DABD001DAC16 /* ContentView.swift */,
+				DCEEABD42A8966B0001DAC16 /* Charts */,
+				DCEEABD12A895931001DAC16 /* Benchmark */,
+				DCEEABB92A87DABE001DAC16 /* Assets.xcassets */,
+				DCEEABBB2A87DABE001DAC16 /* compression_eval.entitlements */,
+				DCEEABBC2A87DABE001DAC16 /* Preview Content */,
+			);
+			path = "compression-eval";
+			sourceTree = "<group>";
+		};
+		DCEEABBC2A87DABE001DAC16 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DCEEABBD2A87DABE001DAC16 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCEEABD12A895931001DAC16 /* Benchmark */ = {
+			isa = PBXGroup;
+			children = (
+				DCEEABC42A87DB90001DAC16 /* BenchmarkView.swift */,
+				DCEEABC62A8832E2001DAC16 /* Runner.swift */,
+				DCEEABCF2A8952F5001DAC16 /* ProcessInfoProvider.swift */,
+			);
+			path = Benchmark;
+			sourceTree = "<group>";
+		};
+		DCEEABD42A8966B0001DAC16 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				DCEEABD22A8962FD001DAC16 /* Run.swift */,
+				DCEEABD52A8966EA001DAC16 /* DistributionChartView.swift */,
+				DC5146362A89C00F00C3C120 /* ExportableChartView.swift */,
+				DC5146382A8F1FF800C3C120 /* CompressionChartView.swift */,
+				DC51463A2A90700800C3C120 /* TruncationChartView.swift */,
+				DC51463C2A92ACDD00C3C120 /* Color.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCEEABB12A87DABD001DAC16 /* compression-eval */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCEEABC12A87DABE001DAC16 /* Build configuration list for PBXNativeTarget "compression-eval" */;
+			buildPhases = (
+				DCEEABAE2A87DABD001DAC16 /* Sources */,
+				DCEEABAF2A87DABD001DAC16 /* Frameworks */,
+				DCEEABB02A87DABD001DAC16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "compression-eval";
+			packageProductDependencies = (
+				DCEEABC92A883FF9001DAC16 /* Brotli */,
+				DCEEABCB2A883FF9001DAC16 /* LZ4 */,
+				DCEEABCD2A883FF9001DAC16 /* ZSTD */,
+			);
+			productName = "compression-eval";
+			productReference = DCEEABB22A87DABD001DAC16 /* compression-eval.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCEEABAA2A87DABD001DAC16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DCEEABB12A87DABD001DAC16 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DCEEABAD2A87DABD001DAC16 /* Build configuration list for PBXProject "compression-eval" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCEEABA92A87DABD001DAC16;
+			packageReferences = (
+				DCEEABC82A883FF9001DAC16 /* XCRemoteSwiftPackageReference "Elva" */,
+			);
+			productRefGroup = DCEEABB32A87DABD001DAC16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCEEABB12A87DABD001DAC16 /* compression-eval */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCEEABB02A87DABD001DAC16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEEABBE2A87DABE001DAC16 /* Preview Assets.xcassets in Resources */,
+				DCEEABBA2A87DABE001DAC16 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCEEABAE2A87DABD001DAC16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5146392A8F1FF800C3C120 /* CompressionChartView.swift in Sources */,
+				DCEEABB82A87DABD001DAC16 /* ContentView.swift in Sources */,
+				DC51463D2A92ACDD00C3C120 /* Color.swift in Sources */,
+				DCEEABC72A8832E2001DAC16 /* Runner.swift in Sources */,
+				DCEEABB62A87DABD001DAC16 /* CompressionEvalApp.swift in Sources */,
+				DC51463B2A90700800C3C120 /* TruncationChartView.swift in Sources */,
+				DCEEABD02A8952F5001DAC16 /* ProcessInfoProvider.swift in Sources */,
+				DCEEABD32A8962FD001DAC16 /* Run.swift in Sources */,
+				DCEEABC52A87DB90001DAC16 /* BenchmarkView.swift in Sources */,
+				DCEEABD62A8966EA001DAC16 /* DistributionChartView.swift in Sources */,
+				DC5146372A89C00F00C3C120 /* ExportableChartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DCEEABBF2A87DABE001DAC16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCEEABC02A87DABE001DAC16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DCEEABC22A87DABE001DAC16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "compression-eval/compression_eval.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"compression-eval/Preview Content\"";
+				DEVELOPMENT_TEAM = L43QEJ2WY5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stephenpanaro.compression-eval";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCEEABC32A87DABE001DAC16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "compression-eval/compression_eval.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"compression-eval/Preview Content\"";
+				DEVELOPMENT_TEAM = L43QEJ2WY5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stephenpanaro.compression-eval";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCEEABAD2A87DABD001DAC16 /* Build configuration list for PBXProject "compression-eval" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEEABBF2A87DABE001DAC16 /* Debug */,
+				DCEEABC02A87DABE001DAC16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCEEABC12A87DABE001DAC16 /* Build configuration list for PBXNativeTarget "compression-eval" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEEABC22A87DABE001DAC16 /* Debug */,
+				DCEEABC32A87DABE001DAC16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DCEEABC82A883FF9001DAC16 /* XCRemoteSwiftPackageReference "Elva" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/L1MeN9Yu/Elva";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCEEABC92A883FF9001DAC16 /* Brotli */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCEEABC82A883FF9001DAC16 /* XCRemoteSwiftPackageReference "Elva" */;
+			productName = Brotli;
+		};
+		DCEEABCB2A883FF9001DAC16 /* LZ4 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCEEABC82A883FF9001DAC16 /* XCRemoteSwiftPackageReference "Elva" */;
+			productName = LZ4;
+		};
+		DCEEABCD2A883FF9001DAC16 /* ZSTD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCEEABC82A883FF9001DAC16 /* XCRemoteSwiftPackageReference "Elva" */;
+			productName = ZSTD;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DCEEABAA2A87DABD001DAC16 /* Project object */;
+}

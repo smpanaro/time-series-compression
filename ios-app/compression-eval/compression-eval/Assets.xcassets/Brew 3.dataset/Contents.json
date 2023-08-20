@@ -1,0 +1,13 @@
+{
+  "data" : [
+    {
+      "filename" : "delta-brew3.csv",
+      "idiom" : "universal",
+      "universal-type-identifier" : "public.comma-separated-values-text"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
