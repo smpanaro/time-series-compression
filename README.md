@@ -1,6 +1,6 @@
 # Time Series Compression
 
-Supporting code for time series compression blog post:
+Supporting code for time series compression [blog post](https://stephenpanaro.com/blog/time-series-compression):
 - 📏 compression evaluation (main.go, ios-app)
 - 📊 chart generation (ios-app)
 
